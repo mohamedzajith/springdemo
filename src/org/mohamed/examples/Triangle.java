@@ -4,35 +4,38 @@ package org.mohamed.examples;
  * Created by dba on 10/13/15.
  */
 public class Triangle {
-    private String type;
-    private int high;
 
-    public Triangle(String type){
-        this.type = type;
+    private Point pointA;
+    private Point pointB;
+    private Point pointC;
+
+    public Point getPointA() {
+        return pointA;
     }
 
-    public Triangle(int high){
-        this.high = high;
+    public void setPointA(Point pointA) {
+        this.pointA = pointA;
     }
 
-    public Triangle(String type , int high){
-        this.high = high;
-        this.type = type;
+    public Point getPointB() {
+        return pointB;
     }
 
-    public int getHigh() {
-        return high;
+    public void setPointB(Point pointB) {
+        this.pointB = pointB;
     }
 
-    public String getType() {
-        return type;
+    public Point getPointC() {
+        return pointC;
     }
 
-//    public void setType(String type) {
-//        this.type = type;
-//    }
+    public void setPointC(Point pointC) {
+        this.pointC = pointC;
+    }
 
     public void draw(){
-        System.out.println(getType() + " Triangle drawing " + getHigh());
+        System.out.println("PointA = ( "+ getPointA().getX() + " , " + getPointA().getY() + " ) ");
+        System.out.println("PointB = ( "+ getPointB().getX() + " , " + getPointB().getY() + " ) ");
+        System.out.println("PointC = ( "+ getPointC().getX() + " , " + getPointC().getY() + " ) ");
     }
 }
